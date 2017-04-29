@@ -1,6 +1,6 @@
 baseURL = "http://minh84.github.io/"
 languageCode = "en-us"
-title = "Personal Notes"
+title = "Minh VU"
 
 # Enable a theme
 theme = "creative-portfolio-theme"
@@ -19,8 +19,8 @@ googleAnalytics = "UA-98259637-1"
     description = "This website serves a my personal notes on Machine Learning (ML) topics, as well as a portfolio for my personal projects."
     copyright = "&copy;2017 Minh VU"
     sidebarAbout = [
-    "I am an aspiring data scientist. This site is home to my projects on ML, blogs and tutorials.",
-    "I'm currently looking for Machine Learning job. Hiring? I'd love to hear from you."
+    "I am an aspiring data scientist. This site is home to my personal projects, blogs and tutorials on Machine Learning and other data science topics.",
+    "I'm currently looking for Machine Learning Engineer job. Hiring? I'd love to hear from you."
     ]
 
     # Personal email
@@ -40,8 +40,8 @@ googleAnalytics = "UA-98259637-1"
     url = "projects/"
 
     [[params.navlinks]]
-    name = "Notes"
-    url = "notes/"
+    name = "Blog"
+    url = "blog/"
 
     [[params.navlinks]]
     name = "Get in touch"
