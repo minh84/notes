@@ -1,0 +1,5 @@
+# Webstorm file
+.idea
+
+# Generate hugo
+public/

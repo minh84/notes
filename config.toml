@@ -1,0 +1,60 @@
+baseURL = "http://minh84.github.io/"
+languageCode = "en-us"
+title = "Personal Notes"
+
+# Enable a theme
+theme = "creative-portfolio-theme"
+
+# Enable comments by entering your Disqus shortname
+disqusShortname = "minh84"
+
+# Enable Google Analytics by entering your tracking code
+googleAnalytics = "UA-98259637-1"
+
+# Setup site's parameters
+[params]
+    # Style options: default (pink), blue, green, pink, red, sea, violet
+    # Use custom.css for your custom styling
+    style = "default"
+    description = "This website serves a my personal notes on Machine Learning (ML) topics, as well as a portfolio for my personal projects."
+    copyright = "&copy;2017 Minh VU"
+    sidebarAbout = [
+    "I am an aspiring data scientist. This site is home to my projects on ML, blogs and tutorials.",
+    "I'm currently looking for Machine Learning job. Hiring? I'd love to hear from you."
+    ]
+
+    # Personal email
+    email = "vungocminh84@gmail.com"
+
+    # Nav links in the side bar
+    [[params.navlinks]]
+    name = "Home"
+    url = ""
+
+    [[params.navlinks]]
+    name = "About"
+    url = "about/"
+
+    [[params.navlinks]]
+    name = "Projects"
+    url = "projects/"
+
+    [[params.navlinks]]
+    name = "Notes"
+    url = "notes/"
+
+    [[params.navlinks]]
+    name = "Get in touch"
+    url = "contact/"
+
+    [params.social]
+    email        = "vungocminh84@gmail.com"
+    linkedin     = "https://www.linkedin.com/in/minh84"
+    github       = "https://www.github.com/minh84"
+    rss          = "index.xml"
+
+    #Adding widgets to the sidebar
+    [params.widgets]
+    categories = false
+    tags = false
+    search = false
