@@ -23,6 +23,9 @@ googleAnalytics = "UA-98259637-1"
     "I'm currently looking for Machine Learning Engineer job. Hiring? I'd love to hear from you."
     ]
 
+    # Turn on Mathjax
+    mathjax = true
+    
     # Personal email
     email = "vungocminh84@gmail.com"
 
