@@ -1,0 +1,35 @@
+{{ define "main" }}
+<div class="col-xs-12 col-sm-8 col-md-9 content-column white-background col-main-fixedpos">
+  {{ partial "mobile_nav_toggle.html" . }}
+
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="image">
+        <img src="{{ .Site.BaseURL}}{{ .Params.image }}" class="img-responsive" alt="">
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <h1>{{ .Title }}</h1>
+      <p class="author-category">
+        {{ .Params.author }}
+      </p>
+
+      <p class="date-comments">
+      <i class="fa fa-calendar-o"></i> {{ .Date.Format "January 2, 2006" }}
+      </p>
+
+    </div>
+  </div>
+  </br>
+
+  <div class="row">
+    <div class="col-lg-10">
+      <div class="content-column-content">         
+         {{ .Content }}
+         {{ template "_internal/disqus.html" . }}
+      </div>
+    </div>
+  </div>
+</div>
+{{ end }}
