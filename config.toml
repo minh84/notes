@@ -3,7 +3,7 @@ languageCode = "en-us"
 title = "Minh VU"
 
 # Enable a theme
-theme = "creative-portfolio-theme"
+theme = "creative-portfolio"
 
 # Enable comments by entering your Disqus shortname
 disqusShortname = "minh84"

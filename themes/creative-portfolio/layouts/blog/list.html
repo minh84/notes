@@ -5,7 +5,7 @@
     <div class="col-lg-8">
       <div class="content-column-content">
          <h1>{{ .Title }}</h1>         
-         <p class="author-category"> Hugo is very fast and simple to use. I hope that I can help other to use Hugo as well. </p>
+         <p class="author-category"> Machine Learning is already applied in all aspect of daily life e.g auto photo tagging from Facebook, diagnosis in medical imaging, personal voice assistant such as <a href="https://en.wikipedia.org/wiki/Amazon_Alexa">Alexa</a> or <a href="https://madeby.google.com/home/">Google Home</a> to <a href="https://deepmind.com/research/alphago/">alphago</a> that beats the champion, human player. There are tons of application from Machine Learning that continues to enhance our life's quality, this made me very curious about it. This blog is where I would like to share and learn more about Machine Learning.</p>
          
           {{ $paginator := .Paginate (where .Data.Pages "Type" "blog") }}
           {{ range $paginator.Pages }}

@@ -1,1 +1,454 @@
 /* your styles go here */
+
+img {
+  vertical-align: middle;
+}
+
+.rendered_html img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.rendered_html * + img {
+  margin-top: 1em;
+}
+.rendered_html img,
+.rendered_html svg {
+  max-width: 100%;
+  height: auto;
+}
+
+.rendered_html table {
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
+  border-collapse: collapse;
+  border-spacing: 0;
+  color: black;
+  font-size: 12px;
+  table-layout: fixed;
+}
+.rendered_html thead {
+  border-bottom: 1px solid black;
+  vertical-align: bottom;
+}
+.rendered_html tr,
+.rendered_html th,
+.rendered_html td {
+  text-align: right;
+  vertical-align: middle;
+  padding: 0.5em 0.5em;
+  line-height: normal;
+  white-space: normal;
+  max-width: none;
+  border: none;
+}
+.rendered_html th {
+  font-weight: bold;
+}
+.rendered_html tbody tr:nth-child(odd) {
+  background: #f5f5f5;
+}
+.rendered_html tbody tr:hover {
+  background: rgba(66, 165, 245, 0.2);
+}
+.rendered_html * + table {
+  margin-top: 1em;
+}
+
+div.cell {
+  /* Old browsers */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-box-align: stretch;
+  display: -moz-box;
+  -moz-box-orient: vertical;
+  -moz-box-align: stretch;
+  display: box;
+  box-orient: vertical;
+  box-align: stretch;
+  /* Modern browsers */
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  border-radius: 2px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  border-width: 1px;
+  border-style: solid;
+  border-color: transparent;
+  width: 100%;
+  padding: 5px;
+  /* This acts as a spacer between cells, that is outside the border */
+  margin: 0px;
+  outline: none;
+  position: relative;
+  overflow: visible;
+}
+
+.prompt {
+  /* This needs to be wide enough for 3 digit prompt numbers: In[100]: */
+  min-width: 14ex;
+  /* This padding is tuned to match the padding on the CodeMirror editor. */
+  padding: 0.4em;
+  margin: 0px;
+  font-family: monospace;
+  font-size:12px;
+  text-align: left;
+  /* This has to match that of the the CodeMirror class line-height below */
+  line-height: 1.21429em;
+  /* Don't highlight prompt number selection */
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  /* Use default cursor */
+  cursor: default;
+}
+
+.highlight .hll {
+    background-color: #ffffcc
+}
+.highlight {
+    background: #f8f8f8;
+}
+.highlight .c {
+    color: #408080;
+    font-style: italic
+}
+/* Comment */
+
+.highlight .err {
+    border: 1px solid #FF0000
+}
+/* Error */
+
+.highlight .k {
+    color: #008000;
+    font-weight: bold
+}
+/* Keyword */
+
+.highlight .o {
+    color: #666666
+}
+/* Operator */
+
+.highlight .ch {
+    color: #408080;
+    font-style: italic
+}
+/* Comment.Hashbang */
+
+.highlight .cm {
+    color: #408080;
+    font-style: italic
+}
+/* Comment.Multiline */
+
+.highlight .cp {
+    color: #BC7A00
+}
+/* Comment.Preproc */
+
+.highlight .cpf {
+    color: #408080;
+    font-style: italic
+}
+/* Comment.PreprocFile */
+
+.highlight .c1 {
+    color: #408080;
+    font-style: italic
+}
+/* Comment.Single */
+
+.highlight .cs {
+    color: #408080;
+    font-style: italic
+}
+/* Comment.Special */
+
+.highlight .gd {
+    color: #A00000
+}
+/* Generic.Deleted */
+
+.highlight .ge {
+    font-style: italic
+}
+/* Generic.Emph */
+
+.highlight .gr {
+    color: #FF0000
+}
+/* Generic.Error */
+
+.highlight .gh {
+    color: #000080;
+    font-weight: bold
+}
+/* Generic.Heading */
+
+.highlight .gi {
+    color: #00A000
+}
+/* Generic.Inserted */
+
+.highlight .go {
+    color: #888888
+}
+/* Generic.Output */
+
+.highlight .gp {
+    color: #000080;
+    font-weight: bold
+}
+/* Generic.Prompt */
+
+.highlight .gs {
+    font-weight: bold
+}
+/* Generic.Strong */
+
+.highlight .gu {
+    color: #800080;
+    font-weight: bold
+}
+/* Generic.Subheading */
+
+.highlight .gt {
+    color: #0044DD
+}
+/* Generic.Traceback */
+
+.highlight .kc {
+    color: #008000;
+    font-weight: bold
+}
+/* Keyword.Constant */
+
+.highlight .kd {
+    color: #008000;
+    font-weight: bold
+}
+/* Keyword.Declaration */
+
+.highlight .kn {
+    color: #008000;
+    font-weight: bold
+}
+/* Keyword.Namespace */
+
+.highlight .kp {
+    color: #008000
+}
+/* Keyword.Pseudo */
+
+.highlight .kr {
+    color: #008000;
+    font-weight: bold
+}
+/* Keyword.Reserved */
+
+.highlight .kt {
+    color: #B00040
+}
+/* Keyword.Type */
+
+.highlight .m {
+    color: #666666
+}
+/* Literal.Number */
+
+.highlight .s {
+    color: #BA2121
+}
+/* Literal.String */
+
+.highlight .na {
+    color: #7D9029
+}
+/* Name.Attribute */
+
+.highlight .nb {
+    color: #008000
+}
+/* Name.Builtin */
+
+.highlight .nc {
+    color: #0000FF;
+    font-weight: bold
+}
+/* Name.Class */
+
+.highlight .no {
+    color: #880000
+}
+/* Name.Constant */
+
+.highlight .nd {
+    color: #AA22FF
+}
+/* Name.Decorator */
+
+.highlight .ni {
+    color: #999999;
+    font-weight: bold
+}
+/* Name.Entity */
+
+.highlight .ne {
+    color: #D2413A;
+    font-weight: bold
+}
+/* Name.Exception */
+
+.highlight .nf {
+    color: #0000FF
+}
+/* Name.Function */
+
+.highlight .nl {
+    color: #A0A000
+}
+/* Name.Label */
+
+.highlight .nn {
+    color: #0000FF;
+    font-weight: bold
+}
+/* Name.Namespace */
+
+.highlight .nt {
+    color: #008000;
+    font-weight: bold
+}
+/* Name.Tag */
+
+.highlight .nv {
+    color: #19177C
+}
+/* Name.Variable */
+
+.highlight .ow {
+    color: #AA22FF;
+    font-weight: bold
+}
+/* Operator.Word */
+
+.highlight .w {
+    color: #bbbbbb
+}
+/* Text.Whitespace */
+
+.highlight .mb {
+    color: #666666
+}
+/* Literal.Number.Bin */
+
+.highlight .mf {
+    color: #666666
+}
+/* Literal.Number.Float */
+
+.highlight .mh {
+    color: #666666
+}
+/* Literal.Number.Hex */
+
+.highlight .mi {
+    color: #666666
+}
+/* Literal.Number.Integer */
+
+.highlight .mo {
+    color: #666666
+}
+/* Literal.Number.Oct */
+
+.highlight .sb {
+    color: #BA2121
+}
+/* Literal.String.Backtick */
+
+.highlight .sc {
+    color: #BA2121
+}
+/* Literal.String.Char */
+
+.highlight .sd {
+    color: #BA2121;
+    font-style: italic
+}
+/* Literal.String.Doc */
+
+.highlight .s2 {
+    color: #BA2121
+}
+/* Literal.String.Double */
+
+.highlight .se {
+    color: #BB6622;
+    font-weight: bold
+}
+/* Literal.String.Escape */
+
+.highlight .sh {
+    color: #BA2121
+}
+/* Literal.String.Heredoc */
+
+.highlight .si {
+    color: #BB6688;
+    font-weight: bold
+}
+/* Literal.String.Interpol */
+
+.highlight .sx {
+    color: #008000
+}
+/* Literal.String.Other */
+
+.highlight .sr {
+    color: #BB6688
+}
+/* Literal.String.Regex */
+
+.highlight .s1 {
+    color: #BA2121
+}
+/* Literal.String.Single */
+
+.highlight .ss {
+    color: #19177C
+}
+/* Literal.String.Symbol */
+
+.highlight .bp {
+    color: #008000
+}
+/* Name.Builtin.Pseudo */
+
+.highlight .vc {
+    color: #19177C
+}
+/* Name.Variable.Class */
+
+.highlight .vg {
+    color: #19177C
+}
+/* Name.Variable.Global */
+
+.highlight .vi {
+    color: #19177C
+}
+/* Name.Variable.Instance */
+
+.highlight .il {
+    color: #666666
+}
+/* Literal.Number.Integer.Long */
