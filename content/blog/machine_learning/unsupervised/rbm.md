@@ -80,16 +80,16 @@ $$
    </p>
    <ul>
     <li>
-     given a set of unlabelled dataset $\left\{v^{(i)}\right\}_{i=1}^n$
+     given a set of unlabelled dataset $\left\{v^{(i)}\right\}_{i=1}^m$
     </li>
     <li>
      given a configuration of RMB e.g number of hidden units $H$
     </li>
    </ul>
    <p>
-    The goal is to learn $a$, $b$ and $W$ that model the joint-distribution directly from dataset $\left\{v^{(i)}\right\}_{i=1}^n$ i.e that maximize the sum of log-likelihood
+    The goal is to learn $a$, $b$ and $W$ that model the joint-distribution directly from dataset $\left\{v^{(i)}\right\}_{i=1}^m$ i.e that maximize the sum of log-likelihood
 $$
-\sum_{i=1}^n\log\left(P(v^{(i)})\right)
+\sum_{i=1}^m\log\left(P(v^{(i)})\right)
 $$
 where 
 $$
